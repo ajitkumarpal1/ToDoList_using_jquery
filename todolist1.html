@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Sr_no="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .li {
+            width: 100px;
+            float: left;
+            width: 100%;
+        }
+
+
+
+        .reliment {
+            float: right;
+            width: 200px;
+        }
+
+        .leliment {
+            float: left;
+        }
+
+        /* .spinner-border{
+            width: 100%;
+            height: 100%;
+        } */
+        .lcantenar {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light shadow mb-2 bg-body ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="offcanvasDarkNavbar">
+            <a class="navbar-brand" href="#">MeetMate</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0 mx-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <i class="fa fa-commenting btn text-light nav-link " id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 10px;font-size:30px"
+                        aria-hidden="true"></i>
+                    <ul class="dropdown-menu" style="left: -100px;" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="">
+                                <img src="https://loremflickr.com/320/240/d" class="rounded-circle "
+                                    style="width: 40px; height: 40px;" alt="profile pic" srcset="">
+                                <a class="class=" nav-item">ajit</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-item" href="#">yegfdgdgd dghdfgdfg s</a>
+                            </li>
+                        </ul>
+
+
+                        <!-- new formet -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="https://loremflickr.com/320/240/A" class="mr-3 rounded-circle"
+                                        style="width: 40px; height: 40px;" alt="profile pic">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">ajit</h5>
+                                        <p>hello ser my Sr_no is ajit kumar pal</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="https://loremflickr.com/320/240/b" class="mr-3 rounded-circle"
+                                        style="width: 40px; height: 40px;" alt="profile pic">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">ajit</h5>
+                                        <p>hello ser my Sr_no is ajit kumar pal</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <img src="https://loremflickr.com/320/240/c" class="mr-3 rounded-circle"
+                                        style="width: 40px; height: 40px;" alt="profile pic">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">ajit kumar pal</h5>
+                                        <p>hello ser my Sr_no is ajit kumar pal</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </ul>
+                </li>
+            </ul>
+            <img src="https://loremflickr.com/320/240/dog" class="rounded-circle " style="width: 40px; height: 40px;"
+                alt="profile pic" srcset="">
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="container my-4">
+        <h2 class="text-center">ToDoS List</h2>
+        <!-- todo list form -->
+        <div>
+            <div class="mb-3">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">description</label>
+                <input type="text" class="form-control" id="description">
+            </div>
+            <button type="submit" id="addl" class="btn btn-primary float-right m-1">Add List</button>
+            <button type="submit" id="clearall" class="btn btn-primary float-right m-1">Clear all</button>
+            <button type="submit" id="deleteselected" class="btn btn-primary float-right m-1">Delete the selected
+                list</button>
+            <!-- todo form end -->
+            <br><br><br>
+            <!-- search bar -->
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <input type="text" class="form-control" value="" id="search" placeholder="Search">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" id="btn-search" class="btn btn-primary mb-3">
+                        <i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                </div>
+            </div>
+
+            <!-- search bar -->
+            <!-- todo list table -->
+
+            <div id="table1" class="card ml-5 mr-5 mb-5 shadow"
+                style="cursor: progress; overflow-x: auto;min-height: 300px;background-color: rgba(0, 0, 0, 0.2);">
+                <div id="loader" class="lcantenar ">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">oO</span>
+                    </div>
+                </div>
+                <div id="app" style="min-width: 1000px;list-style: none;overflow: hidden;">
+                    <div>
+                        <ul style="list-style: none;">
+                            <li class="head pb-2 li text-center">
+                                <div class="form-check">
+                                    <div class="leliment p-2 mr-3">
+                                        <input style="height: 15px;width: 15px;" class="form-check-input"
+                                            type="checkbox" value="" id="allselect">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <b>All</b>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="leliment p-2"><b>Sr_no</b></div>
+                                <div class="reliment p-2"><b>Action</b></div>
+                                <div class="reliment p-2"><b>Description</b></div>
+                                <div class="reliment p-2"><b>Title</b></div>
+                            </li>
+
+                        </ul>
+                        <div id="copy" style="display: none;"
+                            class="pb-2 text-center text-dark list-group-item-action list-group-item-light li">
+                            <div class="leliment p-2 pl-5">
+                                <div class="leliment p-2 pl-4">
+                                    <input style="height: 15px;width: 15px;" class="form-check-input checkbox"
+                                        type="checkbox" value="">
+                                </div>
+                            </div>
+                            <div class="leliment sr_no p-2 pl-5 sr">100</div>
+                            <div class="reliment p-2">
+                                <button class="btn btn-primary action">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    Delete
+                                </button>
+                                <i class="btn btn-primary fa fa-edit save" style="display: none;"> Seve</i>
+                                <i class="btn btn-primary fa fa-edit edit"> Edit</i>
+
+                            </div>
+                            <div class="reliment description p-2">Description</div>
+                            <div class="reliment title p-2">Title</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- todo list table end -->
+        </div>
+    </div>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</body>
+<script>
+    var todolistbackup = [];
+    var todolist = [];
+
+
+    /* edit the array of list */
+    $("#addl").click(() => {
+        let $title = $("#title");
+        let $description = $("#description");
+        todolist.length === 0
+            ? [todolistbackup, todolist].forEach(arr => arr.push({ title: $title.val(), description: $description.val(), selected: false }))
+            : [todolistbackup, todolist].forEach(arr => arr.push({ title: $title.val(), description: $description.val(), selected: false }));
+        console.log(todolist);
+        updatelist();
+        setallselect();
+    });
+
+    /* to update the table  */
+    function updatelist() {
+        $(".physical").remove();
+        todolist.forEach((element, index) => {
+            let copy = $("#copy").clone();
+            copy.attr("style", "");
+            copy.attr("id", "c" + index);
+            copy.addClass("physical");
+            copy.find(".sr_no").html(index + 1);
+            copy.find(".title").html(element.title);
+            copy.find(".description").html(element.description);
+            copy.find("input").addClass("selectedlist");
+            copy.find("input").attr("id", index);
+            copy.find("input").prop("checked", element.selected)
+            copy.find("input").change(function () {
+                todolist[index].selected = this.checked;
+                setallselect();
+            });
+            copy.find(".action").click(function () {
+                popme(index);
+            });
+            copy.find(".edit").click(function () {
+                editme(copy, element, index);
+            });
+            console.log(copy);
+            $("#app").append(copy);
+        });
+    }
+
+    function editme(copy, element, index) {
+        /* edit(index,); */
+        copy.find(".edit").css("display", "none");
+        copy.find(".save").css("display", "");
+
+        let title = $('<input>');
+        let description = $('<input>');
+        title.attr('type', 'text');
+        title.attr('id', 'i-title');
+        title.attr('value',element.title);
+        copy.find(".title").html(title)
+
+        description.attr('type', 'text');
+        description.attr('id', 'i-description');
+        description.attr('value',element.description);
+        copy.find(".description").html(description)
+        
+        copy.find(".save").click(function () { 
+            todolist[index].title=copy.find("#i-title").val();
+            todolist[index].description=copy.find("#i-description").val();
+            updatelist();
+         })
+    }
+
+    /* set the all select box */
+    function setallselect() {
+        $(".selectedlist").filter(":checked").length === $(".selectedlist").length ?
+            $("#allselect").prop("checked", true) : $("#allselect").prop("checked", false);
+    }
+    /* to dilite particuler list */
+    function popme(index) {
+        todolist.splice(index, 1);
+        $("#allselect").prop("checked", false);
+        updatelist();  
+        setallselect(); 
+    }
+    /* checke the all list */
+    $("#allselect").change(function () {
+        console.log(this.checked);
+        this.checked ? $(".selectedlist").prop("checked", true) : $(".selectedlist").prop("checked", false);
+    })
+    /* Delite all */
+    $("#clearall").click(function () {
+        todolist = [];
+        updatelist();
+    })
+    /* delete selected list */
+    $("#deleteselected").click(function () {
+        var checkedElements = $(".selectedlist:checked").get();
+        checkedElements.reverse();
+
+        $(checkedElements).each(function () {
+            todolist.splice($(this).attr("id"), 1);
+        });
+        updatelist();
+    })
+    $("#btn-search").click(function () {
+        let sr = 1;
+        todolist.forEach(function (element, index) {
+            if (element.title.indexOf($("#search").val()) > -1) {
+                $("#c" + index).find(".sr_no").html(sr);
+                $("#c" + index).css("display", "block");
+                sr++;
+            }
+            else {
+                $("#c" + index).css("display", "none");
+            }
+        })
+    })
+
+</script>
+<script>
+    <!-- table loder -->
+    $(document).ready(
+        async function () {
+            $("#loader").fadeIn(5000).attr('style', 'height:' + $("#table1").innerHeight() + 'px;width:' + $("#table1").innerWidth() + 'px'); // 5 seconds (5000ms)
+            await new Promise(resolve => setTimeout(resolve, 500))
+            $("#loader").fadeOut(500);
+            $("#table1").css("cursor", "")
+        })
+</script>
+
+</html>
